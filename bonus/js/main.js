@@ -72,7 +72,7 @@ backImg.addEventListener ("click",
         if (activeImg == 0) {
             wrapImgDom[activeImg].classList.remove("d_block");
 
-            activeImg = wrapImgDom.length - 1;
+            activeImg = wrapImgDom.length;
 
             wrapImgDom[activeImg].classList.add("d_block");
         }
