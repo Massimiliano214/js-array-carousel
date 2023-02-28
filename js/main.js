@@ -34,13 +34,13 @@ const backImg = document.querySelector(".up_button");
 
 nextImg.addEventListener ("click",
     function() {
-        if (activeImg < wrapImgDom.lenght - 1) {
-            wrapImgDom[activeImg].classList.remove("d_block")
+        if (activeImg < wrapImgDom.length - 1) {
+            wrapImgDom[activeImg].classList.remove("d_block");
 
             activeImg++;
 
-            wrapImgDom[activeImg].classList.add("d_block")
-
+            wrapImgDom[activeImg].classList.add("d_block");
+            
         }
 
     }
