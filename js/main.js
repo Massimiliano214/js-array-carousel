@@ -40,7 +40,35 @@ nextImg.addEventListener ("click",
             activeImg++;
 
             wrapImgDom[activeImg].classList.add("d_block");
+
+            backImg.classList.remove("cover");
+
+            if (activeImg == wrapImgDom.length - 1) {
+                nextImg.classList.add("cover");
+            }
+
+        }
+
+    }
+
+
+);
+
+
+backImg.addEventListener ("click",
+    function() {
+        if (activeImg > 0) {
+            wrapImgDom[activeImg].classList.remove("d_block");
+
+            activeImg--;
+
+            wrapImgDom[activeImg].classList.add("d_block");
+
+            nextImg.classList.remove("cover")
             
+            if (activeImg == 0) {
+                backImg.classList.add("cover")
+            }
         }
 
     }
