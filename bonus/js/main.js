@@ -43,14 +43,14 @@ nextImg.addEventListener ("click",
 
     
 
-        }
-        if (activeImg == wrapImgDom.length - 1) {
+        } else if (activeImg >= wrapImgDom.length - 1) {
             wrapImgDom[activeImg].classList.remove("d_block");
 
             activeImg = 0;
 
             wrapImgDom[activeImg].classList.add("d_block");
         }
+        
 
     }  
      
@@ -68,14 +68,14 @@ backImg.addEventListener ("click",
 
             wrapImgDom[activeImg].classList.add("d_block");
 
-        }
-        if (activeImg == 0) {
+        } else if (activeImg == 0) {
             wrapImgDom[activeImg].classList.remove("d_block");
 
-            activeImg = wrapImgDom.length;
+            activeImg = wrapImgDom.length - 1;
 
             wrapImgDom[activeImg].classList.add("d_block");
         }
+        
     }
 
 
